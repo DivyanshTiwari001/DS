@@ -43,6 +43,9 @@ int findMin(int distance[],int Visited[],int n){
             index=i;
         }
     }
+    if(index ==-1){
+       for(int i=0;i<n;i++){if(distance[i]==INT_MAX && !Visited[i])return i;}
+}
     return index;
 }
 int allVisited(int Visited[],int n){
